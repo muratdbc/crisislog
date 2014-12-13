@@ -102,6 +102,31 @@ $(document).ready(function(){
     title: 'House 2, 3 Casualties'
   });
 
+    //ADD MARKER 4
+   var myLatlng = new google.maps.LatLng(37.424243, -122.083628);
+
+    marker4 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 13, 14 Casualties'
+  });
+// ADD MARKER 5
+       var myLatlng = new google.maps.LatLng(37.419812, -122.077963);
+
+    marker5 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 6, 10 Casualties'
+  });
+// ADD MARKER 6
+       var myLatlng = new google.maps.LatLng(37.429628, -122.077105);
+
+    marker6 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 10, 11 Casualties'
+  });
+
   });
 
   $("#danger_button").on("click",function(event){
@@ -121,7 +146,7 @@ $(document).ready(function(){
     title: cas_number
   });
 
-  allmarkers = [marker1,marker2,marker3];
+  allmarkers = [marker1,marker2,marker3,marker4,marker5,marker6];
   markerCluster = new MarkerClusterer(map, allmarkers);
 
 
