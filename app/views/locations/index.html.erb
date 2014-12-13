@@ -18,6 +18,9 @@
 
 
 </body>
+
+
+
 <script type="text/javascript">
 
 function bindEventListeners(){
@@ -83,6 +86,7 @@ $(document).ready(function(){
       center: { lat: position.coords.latitude, lng: position.coords.longitude},
       zoom: 14
     };
+////////////////////// CLUSTER A \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
    map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
    //ADD MARKER 1
@@ -101,6 +105,8 @@ $(document).ready(function(){
     map: map,
     title: 'House 2, 3 Casualties'
   });
+
+////////////////////// CLUSTER B \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
     //ADD MARKER 4
    var myLatlng = new google.maps.LatLng(37.424243, -122.083628);
@@ -126,6 +132,128 @@ $(document).ready(function(){
     map: map,
     title: 'House 10, 11 Casualties'
   });
+////////////////////// CLUSTER C \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// ADD MARKER 7
+       var myLatlng = new google.maps.LatLng(37.522232, -122.013397);
+
+    marker7 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 2, 9 Casualties'
+  });
+
+// ADD MARKER 8
+       var myLatlng = new google.maps.LatLng(37.532850, -122.033997);
+
+    marker8 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 4, 5 Casualties'
+  });
+
+// ADD MARKER 9
+       var myLatlng = new google.maps.LatLng(37.529379, -122.013140);
+
+    marker9 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 1, 2 Casualties'
+  });
+
+// ADD MARKER 10
+       var myLatlng = new google.maps.LatLng(37.533871, -122.013311);
+
+    marker10 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 11, 05 Casualties'
+  });
+
+
+////////////////////// CLUSTER D \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+   //ADD MARKER 11
+  var myLatlng = new google.maps.LatLng(37.804070, -122.411351);
+
+   marker11 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 1,4 Casualties'
+  });
+   //ADD MARKER 12
+   var myLatlng = new google.maps.LatLng(37.804816, -122.405515);
+
+    marker12 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 2, 3 Casualties'
+  });
+
+
+    //ADD MARKER 13
+   var myLatlng = new google.maps.LatLng(37.805358, -122.416158);
+
+    marker13 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 13, 14 Casualties'
+  });
+// ADD MARKER 14
+       var myLatlng = new google.maps.LatLng(37.794372, -122.404056);
+
+    marker14 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 6, 10 Casualties'
+  });
+// ADD MARKER 15
+       var myLatlng = new google.maps.LatLng(37.805494, -122.405171);
+
+    marker15 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 10, 11 Casualties'
+  });
+// ADD MARKER 16
+       var myLatlng = new google.maps.LatLng(37.799594, -122.406459);
+
+    marker16 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 2, 9 Casualties'
+  });
+
+// ADD MARKER 17
+       var myLatlng = new google.maps.LatLng(37.805291, -122.405000);
+
+    marker17 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 4, 5 Casualties'
+  });
+
+// ADD MARKER 18
+       var myLatlng = new google.maps.LatLng(37.798644, -122.399678);
+
+    marker18 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 1, 2 Casualties'
+  });
+
+// ADD MARKER 19
+       var myLatlng = new google.maps.LatLng(37.804545, -122.408176);
+
+    marker19 = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'House 11, 05 Casualties'
+  });
+
+////////////////////// CLUSTER E \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
 
   });
 
@@ -146,7 +274,7 @@ $(document).ready(function(){
     title: cas_number
   });
 
-  allmarkers = [marker1,marker2,marker3,marker4,marker5,marker6];
+  allmarkers = [marker1,marker2,marker3,marker4,marker5,marker6,marker7,marker8,marker9,marker10,marker11,marker12,marker13,marker14,marker15,marker16,marker17,marker18,marker19];
   markerCluster = new MarkerClusterer(map, allmarkers);
 
 
