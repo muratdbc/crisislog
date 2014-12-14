@@ -8,12 +8,18 @@
   <script type="text/javascript"
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAaFvui-T1POvC7A_lWV2ToB76IRIe5w0">
   </script>
+
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 </head>
 <body>
-  <button type="button" class="btn btn-danger" id="danger_button" style="float:right">Danger</button>
-  <div id="map-canvas"></div>
+<div class="jumbotron">
+        <h1>Crisis Cache</h1>
+        <p class="lead">Geo-referenced, emergency logging </p>
+    <button type="button" class="btn btn-danger" id="danger_button" style="float:center">Danger</button>
+      </div>
+
+    <div  id="map-canvas"></div>
   <!-- </div> -->
 
 
@@ -258,7 +264,7 @@ $(document).ready(function(){
   });
 
   $("#danger_button").on("click",function(event){
-    promptText = "Enter the casualty number";
+    promptText = "What would you like to log?";
     cas_number = prompt(promptText);
     console.log('Blocking attempt to submit form using preventDefault().'); // DEBUG
     event.preventDefault(); // Prevent default submit
