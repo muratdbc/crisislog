@@ -1,8 +1,13 @@
 class LocationsController < ApplicationController
-
+  respond_to :json
   def new
+
   end
   def index
+    respond_with Location.all
+  end
+
+  def welcome
     render :index
   end
 

@@ -2,8 +2,11 @@ Rails.application.routes.draw do
 
   resources  :locations
 
-  # root 'locations#welcome'
+  # root 'welcome'
+
+  root 'locations#welcome'
   # get 'login_with_google_plus' => 'locations#login_with_google_plus'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
